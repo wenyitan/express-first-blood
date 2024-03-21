@@ -17,16 +17,7 @@ function addUser(event){
     })
     .then((resp)=> {
         console.log("resp from server ", resp)
-        fetch("http://localhost:3000/users/all", {
-            method: "GET",
-        })
-        .then((response)=> {
-            console.log(response)
-            return response.json();
-        })
-        .then((resp)=> {
-            fetchAll();
-        })
+        fetchAll();
     })
 }
 
