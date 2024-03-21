@@ -8,6 +8,40 @@
 <body>
   <h1>Express</h1>
   <p>Welcome to Express</p>
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="add-user-header">Add User</h1>
+      <form id="add-user-form" class="container" method="post">
+        <input class="name-input" type="text" placeholder="First Name" name="firstName" id="add-user-form_first-name">
+        <input class="name-input" type="text" placeholder="Last Name" name="lastName" id="add-user-form_last-name">
+        <textarea class="address-input" placeholder="Address" name="address" id="add-user-form_address"></textarea>
+        <button type="submit" class="add-btn" id="add-btn">Add</button>
+      </form>
+    </div>
+    <div class="container2">
+      <table class="user-table">
+        <thead>
+          <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Address</td>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <template id="template">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </template>
+    </div>
+  </div>
+
+<script type="text/javascript" src="/javascripts/script.js"></script>
   
 </body>
 
